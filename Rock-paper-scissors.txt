@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+int main() {
+    char choice1;
+	char choice2;
+	char r, s, p;
+    char ch;	
+	cout << "Rock, Paper, Scissors Game" << endl; 
+	cout << "enter R for rock, P for paper, or S for scissors: " << endl;
+	cin >> choice1;
+	cout << "enter R for rock, P for paper, or S for scissors again : " << endl;
+	cin >> choice2;
+
+    if(choice1 == choice2) {
+        cout<<"Game Draw !";
+    }
+    else if (choice1 == 'r' && choice2 == 's'){
+        cout<<"Rock beat scissors ! "<<endl;
+    }
+    else if (choice1 == 's' && choice2 == 'r'){
+        cout<<"Rock beat scissors ! "<<endl;
+    }
+    else if (choice1 == 's' && choice2 == 'p'){
+        cout<<"scissors beat paper ! "<<endl;
+    }
+    else if (choice1 == 'p' && choice2 == 's'){
+        cout<<"scissors beat paper ! "<<endl;
+    }
+    else if (choice1 == 'p' && choice2 == 'r'){
+        cout<<"paper beat rock ! "<<endl;
+    }
+    else if (choice1 == 'r' && choice2 == 'p'){
+        cout<<"paper beat rock ! "<<endl;
+    }
+    else{
+        cout<<"invalid choice";
+    }
+ return 0;
+}
